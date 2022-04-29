@@ -1,3 +1,15 @@
+# Mini Art Gallery 🖼
+
+A small React app that uses the [The Metropolitan Museum of Art Collection API](https://metmuseum.github.io/). This project was for a [Knowledge Share](https://github.com/quinnter/Work-React-Api-Project) I hosted at work encouraging everyone to try and make their own React app that makes at least one API call. 
+
+A simple one page application that grabs a list of artwork IDs using a search query. It _should_ grab artworks that have an image to work with, but from testing it sometimes returns artworks that do not have an image. 
+
+There is a button you can click that will make another API call using a random ID from the list we have that updates the art and the description on screen.
+
+Shout out to [chris22smith](https://codepen.io/chris22smith/pen/PbBwjp) on codepen for the great picture frame css code!
+
+If you'd like to run the project for yourself you can fork the code and follow the steps below. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,130 @@
+
+/* Extra Small (xs) */
+$screen-xs-min: 0px;
+
+/* Small (sm) */
+$screen-sm-min: 600px;
+
+/* Medium (md) */
+$screen-md-min: 900px;
+
+/* Large (lg) */
+$screen-lg-min: 1200px;
+
+/* Extra Large (xl) */
+$screen-xl-min: 1536px;
+
+.background {
+    background-image:linear-gradient(#711324, #390A12);
+    height: 100vh;
+}
+
+img {
+    border:solid 2px;
+    border-bottom-color:#ffe;
+    border-left-color:#eed;
+    border-right-color:#eed;
+    border-top-color:#ccb;
+    max-height:100%;
+    max-width:100%;
+}
+
+.frame {
+    background-color:#ddc;
+    border:solid 6vmin black;
+    border-bottom-color:#E6BE7E;
+    border-left-color:#D7AC68;
+    border-radius:2px;
+    border-right-color:#D7AC68;
+    border-top-color:#CEA564;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 8px 5px 2px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    display:inline-block;
+    max-width: 80%;
+    height: 80vh;
+    padding:8vmin;
+    position:relative;
+    text-align:center;
+    &:before {
+      border-radius:2px;
+      bottom:-2vmin;
+      box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+      content:"";
+      left:-2vmin;
+      position:absolute;
+      right:-2vmin;
+      top:-2vmin;
+    }
+    &:after {
+      border-radius:2px;
+      bottom:-3vmin;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+      content:"";
+      left:-3vmin;
+      position:absolute;
+      right:-3vmin;
+      top:-3vmin;
+    }
+    @media screen and (max-width: $screen-md-min) {
+        max-width: 90%;
+        height: 80vh;
+        align-self: center;
+        padding: 2vmin;
+    }
+    @media screen and (max-width: $screen-md-min) {
+        max-width: 90%;
+        height: 60vh;
+        padding: 2vmin;
+    }
+}
+
+.art-details {
+    background-color: whitesmoke;
+    padding: 20px;
+    height: 30%;
+    margin-bottom: 10vh;
+    width: 75%;
+    position: relative;
+    @media screen and (max-width: $screen-md-min) {
+        height: 60%;
+        margin-bottom: 3vh;
+        width: 100%;
+    }
+}
+
+.main-content-flexbox {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    @media screen and (max-width: $screen-md-min) {
+        flex-direction: column;
+      }
+}
+
+.artwork-flex-item {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.art-description-flex-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    @media screen and (max-width: $screen-md-min) {
+        width: 75%;
+        align-items: center;
+      }
+}
+
+.spotlight-svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media screen and (max-width: $screen-md-min) {
+        width: 100%;
+      }
+}
