@@ -6,23 +6,23 @@ import ArtworkDescription from './components/ArtworkDescription';
 import Lights from './components/Lights';
 
 export type ArtDetails = {
-      artistBeginDate: string
-      artistEndDate: string
-      artistDisplayName: string
-      artistDisplayBio: string
-      medium: string
-      title: string
-      objectDate: string
+  artistBeginDate: string
+  artistEndDate: string
+  artistDisplayName: string
+  artistDisplayBio: string
+  medium: string
+  title: string
+  objectDate: string
 }
 
 const initialState:ArtDetails = {
-    artistBeginDate: '',
-    artistEndDate: '',
-    artistDisplayBio: '',
-    artistDisplayName: '',
-    medium: '',
-    title: '',
-    objectDate: ''
+  artistBeginDate: '',
+  artistEndDate: '',
+  artistDisplayBio: '',
+  artistDisplayName: '',
+  medium: '',
+  title: '',
+  objectDate: ''
 }
 
 
@@ -52,13 +52,12 @@ function App() {
       <Lights/>
       <div className='main-content-flexbox'>
         <div className='artwork-flex-item'>
-        <Artwork imgUrl={currentArtImgUrl} imgDescription={currentArtDetails.artistDisplayBio}/>
+        <Artwork imgUrl={currentArtImgUrl} imgDescription={`${currentArtDetails.medium} ${currentArtDetails.title} ${currentArtDetails.artistDisplayName}`}/>
         </div>
         <div className='art-description-flex-item'>
         <ArtworkDescription artDetails={currentArtDetails} handleOnClick={getNewArtwork}/>      
         </div>
-      </div>
-      
+      </div> 
     </div>
   );
 }
