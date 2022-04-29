@@ -8,6 +8,15 @@ There is a button you can click that will make another API call using a random I
 
 Shout out to [chris22smith](https://codepen.io/chris22smith/pen/PbBwjp) on codepen for the great picture frame css code!
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/quinnter/mini-api-musuem/main/src/imgs/screenshot-small-screen.png"  height="220" />
+</p>
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/quinnter/mini-api-musuem/main/src/imgs/screenshot-web.png"  height="220" />
+</p>
+
+
 If you'd like to run the project for yourself you can fork the code and follow the steps below. 
 
 # Getting Started with Create React App
