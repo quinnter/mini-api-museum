@@ -1,4 +1,4 @@
-# Mini Art Gallery 🖼
+# Mini Art Museum 🖼
 
 A small React app that uses the [The Metropolitan Museum of Art Collection API](https://metmuseum.github.io/). This project was for a [Knowledge Share](https://github.com/quinnter/Work-React-Api-Project) I hosted at work encouraging everyone to try and make their own React app that makes at least one API call. 
 
